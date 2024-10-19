@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { NewInvoiceParameters } from 'telegraf/typings/telegram-types';
 import { bot } from '../../../bot/botInstance';
 
-const BASE_PATH = process.env.VERCEL_ENV === 'production' ? 'https://tg-web-app-iota.vercel.app' : 'http://localhost:3000';
+const BASE_PATH = process.env.VERCEL_ENV === 'production' ? 'https://market-next-nine.vercel.app' : 'http://localhost:3000';
 
 const getInvoice = (id: number): NewInvoiceParameters => {
   const invoice: NewInvoiceParameters = {
